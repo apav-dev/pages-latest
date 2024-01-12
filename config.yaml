@@ -21,11 +21,11 @@ siteStream:
     locales:
       - en
 
-# responseHeaders:
-#   - pathPattern: ^/blogs/.*
-#     headerKey: aaron-custom-header
-#     headerValues:
-#       - aaron-custom-value
+responseHeaders:
+  - pathPattern: ^/blogs/.*
+    headerKey: aaron-custom-header
+    headerValues:
+      - aaron-custom-value
 
 # Static redirects can establish redirects from individual source paths to individual destination paths.
 staticRoutes:
@@ -37,10 +37,10 @@ staticRoutes:
   #   to: /blogs/lower-east-side
   #   status: 200
 # Dynamic redirects can establish redirect groups based on pattern matching.
-dynamicRoutes:
-  - from: /assets/*
-    to: /blogs/assets/:splat
-    status: 200
+# dynamicRoutes:
+#   - from: /assets/*
+#     to: /blogs/assets/:splat
+#     status: 200
 
 # The serving configuration allows for specification of a reverse proxy domain.
 serving:
