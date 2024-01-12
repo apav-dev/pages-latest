@@ -21,11 +21,11 @@ siteStream:
     locales:
       - en
 
-responseHeaders:
-  - pathPattern: ^/blogs/.*
-    headerKey: aaron-custom-header
-    headerValues:
-      - aaron-custom-value
+# responseHeaders:
+#   - pathPattern: ^/blogs/.*
+#     headerKey: aaron-custom-header
+#     headerValues:
+#       - aaron-custom-value
 
 # Static redirects can establish redirects from individual source paths to individual destination paths.
 staticRoutes:
