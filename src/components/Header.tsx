@@ -18,7 +18,7 @@ export const Header = ({ logo }: HeaderProps) => {
       >
         {logo && (
           <div className="flex lg:flex-1">
-            <Link href="/">
+            <Link href="/" eventName="cta click test">
               <span className="sr-only">Company logo</span>
               <Image className="h-8 w-auto" image={logo.image} />
             </Link>
