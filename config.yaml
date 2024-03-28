@@ -54,9 +54,9 @@ dynamicRoutes:
 #   disableSitemapGeneration: true
 
 # The authentication configuration allows for usage of a site-level or page-level authentication policy.
-authentication:
-  policyName: blogs-policy2
-  includePaths: # the paths which should be included in the auth policy
-    - /blogs/soho
+# authentication:
+#   policyName: blogs-policy2
+#   includePaths: # the paths which should be included in the auth policy
+#     - /blogs/soho
 
 
