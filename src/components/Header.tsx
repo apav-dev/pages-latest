@@ -4,6 +4,7 @@ import {
   ImageType,
   Link,
 } from "@yext/pages-components";
+import { Home } from "lucide-react";
 
 export interface HeaderProps {
   logo?: ComplexImageType | ImageType;
@@ -16,14 +17,14 @@ export const Header = ({ logo }: HeaderProps) => {
         className="mx-auto flex h-full items-center justify-between px-8"
         aria-label="Global"
       >
-        {logo && (
-          <div className="flex lg:flex-1">
-            <Link href="/" eventName="cta click test">
-              <span className="sr-only">Company logo</span>
-              <Image className="h-8 w-auto" image={logo.image} />
-            </Link>
-          </div>
-        )}
+        {/* {logo && ( */}
+        <div className="flex lg:flex-1">
+          <Link href="/" eventName="cta click test">
+            <span className="sr-only">Company logo</span>
+            <Home className="h-7 w-7" />
+          </Link>
+        </div>
+        {/* )} */}
         <div className="flex flex-1 items-center justify-end gap-x-6">
           <a
             href="#"
