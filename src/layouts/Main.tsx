@@ -9,10 +9,10 @@ export interface MainProps {
 export const Main = ({ children, templateData }: MainProps) => {
   return (
     <AnalyticsProvider
-      apiKey="e28da53848a6e8ee815bd443a4eda720"
+      apiKey={YEXT_PUBLIC_EVENTS_API_KEY}
       currency="USD"
       templateData={templateData}
-      productionDomains={["pages-latestv2.pgsdemo.com"]}
+      productionDomains={[YEXT_PUBLIC_PROD_DOMAIN]}
       enableDebugging={true}
     >
       <div className="relative min-h-screen">{children}</div>
