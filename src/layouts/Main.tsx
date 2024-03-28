@@ -13,6 +13,7 @@ export const Main = ({ children, templateData }: MainProps) => {
       currency="USD"
       templateData={templateData}
       productionDomains={["pages-latestv2.pgsdemo.com"]}
+      enableDebugging={true}
     >
       <div className="relative min-h-screen">{children}</div>
     </AnalyticsProvider>
