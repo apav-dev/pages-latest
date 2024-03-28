@@ -1,4 +1,9 @@
-import { Image, ComplexImageType, ImageType } from "@yext/pages-components";
+import {
+  Image,
+  ComplexImageType,
+  ImageType,
+  Link,
+} from "@yext/pages-components";
 
 export interface HeaderProps {
   logo?: ComplexImageType | ImageType;
@@ -13,10 +18,10 @@ export const Header = ({ logo }: HeaderProps) => {
       >
         {logo && (
           <div className="flex lg:flex-1">
-            <a href="/">
+            <Link href="/">
               <span className="sr-only">Company logo</span>
-              <Image className="h-8 w-auto" image={logo} />
-            </a>
+              <Image className="h-8 w-auto" image={logo.image} />
+            </Link>
           </div>
         )}
         <div className="flex flex-1 items-center justify-end gap-x-6">

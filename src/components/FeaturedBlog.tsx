@@ -1,5 +1,5 @@
 import { BlogStarter_featuredBlogs } from "../types/autogen";
-import { Image } from "@yext/pages-components";
+import { Image, Link } from "@yext/pages-components";
 import { formatDate } from "../utils";
 
 export interface FeaturedBlogProps {
@@ -40,10 +40,13 @@ export const FeaturedBlog = ({ blog }: FeaturedBlogProps) => {
         </div>
         <div className="group relative max-w-xl">
           <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-            <a href={`/${blog.slug}`}>
+            <Link
+              href={`/${blog.slug}`}
+              eventName={`Blog Click: ${blog.name}`} // New
+            >
               <span className="absolute inset-0" />
               {blog.name}
-            </a>
+            </Link>
           </h3>
           <p className="mt-5 text-sm leading-6 text-gray-600">
             {blog.blogStarter_description}

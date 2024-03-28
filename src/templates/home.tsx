@@ -8,7 +8,7 @@ import {
   TemplateProps,
   TemplateRenderProps,
 } from "@yext/pages";
-import { Image } from "@yext/pages-components";
+import { AnalyticsScopeProvider, Image, Link } from "@yext/pages-components";
 import { Main } from "../layouts/Main";
 import { Header } from "../components/Header";
 import Footer from "../components/Footer";
@@ -65,11 +65,11 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = ({
 const Home: Template<TemplateRenderProps<HomeEntityType>> = (data) => {
   const { document } = data;
 
-  console.log(document);
-
   return (
     <Main templateData={data}>
-      {/* <Header logo={_site?.logo} /> */}
+      <AnalyticsScopeProvider name={"header"}>
+        <Header logo={document._site?.logo} />
+      </AnalyticsScopeProvider>
       <main className="mx-auto max-w-5xl px-6 pb-52">
         <div className="flex flex-col gap-8 my-12">
           {document.blogStarter_coverPhoto && (
