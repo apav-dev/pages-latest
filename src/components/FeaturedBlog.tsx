@@ -40,7 +40,7 @@ export const FeaturedBlog = ({ blog }: FeaturedBlogProps) => {
         </div>
         <div className="group relative max-w-xl">
           <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-            <Link href={`#`} eventName={"blogclick"}>
+            <Link href={`/${blog.slug}`} eventName={"blogclick"}>
               {blog.name}
             </Link>
           </h3>
