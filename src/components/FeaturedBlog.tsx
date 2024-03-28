@@ -26,12 +26,13 @@ export const FeaturedBlog = ({ blog }: FeaturedBlogProps) => {
           <time dateTime={blog.datePosted} className="text-gray-500">
             {formatDate(blog.datePosted)}
           </time>
-          <a
+          <Link
             href={`/${blog.slug}`}
+            eventName={"blogclick"}
             className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
           >
             {blog.name}
-          </a>
+          </Link>
           {blog.c_premium && (
             <div className="relative z-10 rounded-full bg-sky-200 px-3 py-1.5 font-medium text-gray-600 ">
               Premium

@@ -1,5 +1,6 @@
 import { AnalyticsProvider } from "@yext/pages-components";
 import { TemplateProps } from "@yext/pages/*";
+import { isProduction } from "@yext/pages/util";
 
 export interface MainProps {
   children?: React.ReactNode;
@@ -13,7 +14,7 @@ export const Main = ({ children, templateData }: MainProps) => {
       currency="USD"
       templateData={templateData}
       productionDomains={[YEXT_PUBLIC_PROD_DOMAIN]}
-      enableDebugging={true}
+      enableDebugging={isProduction(YEXT_PUBLIC_PROD_DOMAIN)}
     >
       <div className="relative min-h-screen">{children}</div>
     </AnalyticsProvider>
