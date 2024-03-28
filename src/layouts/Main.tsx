@@ -12,7 +12,7 @@ export const Main = ({ children, templateData }: MainProps) => {
       apiKey="e28da53848a6e8ee815bd443a4eda720"
       currency="USD"
       templateData={templateData}
-      productionDomains={["pages-latest.pgsdemo"]}
+      productionDomains={["pages-latestv2.pgsdemo.com"]}
     >
       <div className="relative min-h-screen">{children}</div>
     </AnalyticsProvider>
