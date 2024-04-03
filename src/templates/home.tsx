@@ -8,7 +8,12 @@ import {
   TemplateProps,
   TemplateRenderProps,
 } from "@yext/pages";
-import { AnalyticsScopeProvider, Image, Link } from "@yext/pages-components";
+import {
+  AnalyticsScopeProvider,
+  HoursStatus,
+  Image,
+  Link,
+} from "@yext/pages-components";
 import { Main } from "../layouts/Main";
 import { Header } from "../components/Header";
 import Footer from "../components/Footer";
