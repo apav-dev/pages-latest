@@ -13,7 +13,7 @@ export const Main = ({ children, templateData }: MainProps) => {
       currency="USD"
       templateData={templateData}
       productionDomains={[YEXT_PUBLIC_PROD_DOMAIN]}
-      enableDebugging={true}
+      enableDebugging={YEXT_PUBLIC_ENV === "dev"}
     >
       <div className="relative min-h-screen">{children}</div>
     </AnalyticsProvider>
