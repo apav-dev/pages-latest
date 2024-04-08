@@ -1,6 +1,5 @@
 import { AnalyticsProvider } from "@yext/pages-components";
 import { TemplateProps } from "@yext/pages/*";
-import { isProduction } from "@yext/pages/util";
 
 export interface MainProps {
   children?: React.ReactNode;
